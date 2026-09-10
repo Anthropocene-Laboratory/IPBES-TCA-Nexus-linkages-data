@@ -1,0 +1,22 @@
+{
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "version": "1.0.0",
+  "title": "Expert-coded linkages between the IPBES transformative-change actions and the IPBES Nexus response options",
+  "description": "<p>1,692 judgements by eight IPBES expert authors, each linking one of the 22 transformative-change actions of the IPBES Transformative Change Assessment (chapter 5) to one of the 71 response options of the IPBES Nexus Assessment (chapter 5), and qualifying the linkage as primary or secondary.</p><p>This is the minimal dataset behind the accompanying article: every number reported there is recomputed from these files by the verification script included, with no other input. Judgements were elicited with the TCA-Nexus Linker, an instrument that proposes no candidate matches and computes no textual similarity, so each row is an explicit expert judgement rather than an inferred association.</p><p>Coders are pseudonymised. Their identities are not published, and no file here contains names, e-mail addresses or timestamps.</p>",
+  "creators": [
+    {
+      "name": "Loeffler, Benjamin",
+      "affiliation": "The Anthropocene Laboratory, Royal Swedish Academy of Sciences, Stockholm, Sweden"
+    }
+  ],
+  "keywords": [
+    "IPBES",
+    "transformative change",
+    "nexus assessment",
+    "expert elicitation",
+    "biodiversity",
+    "response options"
+  ]
+}

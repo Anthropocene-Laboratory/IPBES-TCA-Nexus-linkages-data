@@ -1,0 +1,72 @@
+id,num,category,title
+B01,1,Conserve ecosystems,Area-based conservation
+F01,2,Conserve ecosystems,Halt conversion of ecosystems of high ecological integrity
+H10,3,Conserve ecosystems,Forest conservation for health
+B05,4,Restore ecosystems,Forest landscape restoration
+B06,5,Restore ecosystems,Restoration of coastal and marine systems
+B07,6,Restore ecosystems,Restoration of inland water systems
+B08,7,Restore ecosystems,Rewilding
+F02,8,Restore ecosystems,Restore soil health
+H08,9,Restore ecosystems,Mangrove conservation and restoration for health
+C04,10,Restore ecosystems,Wetland conservation and restoration
+C13,11,Restore ecosystems,Restoration of coastal and marine ecosystems for carbon sequestration
+B03; C11,12,Manage ecosystems,Agroecology*
+W05,13,Manage ecosystems,Sustainable inland fisheries
+W11,14,Manage ecosystems,Manage alien species
+F04,15,Manage ecosystems,Ecological intensification – croplands
+F05,16,Manage ecosystems,Ecological intensification – rangelands
+F06,17,Manage ecosystems,Ecological intensification – aquatic foods
+C01,18,Manage ecosystems,Increase soil organic carbon
+C03,19,Manage ecosystems,Integrated multitrophic aquaculture
+C12,20,Manage ecosystems,Forest-based practices to address climate change
+W04,21,Manage ecosystems,Efficient water use in agriculture
+F10,22,Consume sustainably,Reduce food loss and waste
+F11; C15,23,Consume sustainably,Sustainable healthy diets*
+H04,24,Consume sustainably,Sustainable use of medicinal plants
+H06,25,Consume sustainably,Reduce meat overconsumption
+C05,26,Consume sustainably,Offshore wind power
+C06,27,Consume sustainably,Solar photovoltaics on land
+C07,28,Consume sustainably,Sustainable bioeconomy
+W12,29,Reduce pollution,Manage wastewater
+F07,30,Reduce pollution,Reduce nutrient pollution
+F08,31,Reduce pollution,Reduce pesticide pollution
+F09,32,Reduce pollution,Reduce plastic pollution
+H07,33,Reduce pollution,Pollution prevention
+F03; C02,34,Reduce pollution,Sustainable intensification*
+C08,35,Reduce pollution,Reduce short-lived climate pollutants
+B09,36,Integrate planning and governance,Integrated landscape and seascape approaches
+B12,37,Integrate planning and governance,Land and sea planning
+W02,38,Integrate planning and governance,Integrated water infrastructure
+W08,39,Integrate planning and governance,Transboundary water cooperation
+W09,40,Integrate planning and governance,Groundwater governance
+W13,41,Integrate planning and governance,Water-sensitive urban infrastructure
+W15,42,Integrate planning and governance,Community water management
+F12,43,Integrate planning and governance,City region food systems
+H12,44,Integrate planning and governance,Integrated watershed-health interventions
+B02; C14,45,Manage risk,Urban nature-based solutions*
+W03,46,Manage risk,Dam operation
+B04,47,Manage risk,Ecosystem-based adaptation in rural landscapes
+H03,48,Manage risk,Net-zero sustainable healthcare
+H09,49,Manage risk,Urban green infrastructure
+H11,50,Manage risk,Biodiversity management for zoonoses
+H13,51,Manage risk,Health impact assessments
+H14,52,Manage risk,The One Health approach
+C09,53,Manage risk,Multi-hazard early warning systems
+B10,54,Ensure rights and equity,Rights-based approaches
+W01,55,Ensure rights and equity,Inclusive water education
+W06,56,Ensure rights and equity,Inclusive water management
+W07,57,Ensure rights and equity,Rights of nature
+W14,58,Ensure rights and equity,Address gendered burdens of water collection
+F14,59,Ensure rights and equity,Foster gender transformative approaches
+F15,60,Ensure rights and equity,Indigenous food systems
+F16,61,Ensure rights and equity,Access to natural resources and land
+H01,62,Ensure rights and equity,Universal health coverage
+H02,63,Ensure rights and equity,Intercultural health services
+B13,64,Align financing,Natural capital accounting
+W10,65,Align financing,Finance for water infrastructure
+F13,66,Align financing,Reform public spending
+C10,67,Align financing,Global cooperation for finance and technology
+B11,68,Others,Multilateral environmental agreements
+B14,69,Others,Reconnecting people with nature
+H05,70,Others,Nature on prescription
+H15,71,Others,Integrated health education
