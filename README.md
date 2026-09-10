@@ -1,6 +1,7 @@
 # Expert-coded linkages between IPBES transformative-change actions and Nexus response options
 
 [![Licence: CC BY 4.0](https://img.shields.io/badge/Licence-CC%20BY%204.0-lightgrey.svg)](./LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22686363.svg)](https://doi.org/10.5281/zenodo.22686363)
 
 1,692 judgements by eight IPBES expert authors, each linking one of the **22 transformative-change
 actions** of the IPBES Transformative Change Assessment (chapter 5) to one of the **71 response
@@ -71,9 +72,15 @@ agreement, leave-one-coder-out robustness and coder effort all work from the pse
 
 ## Citing
 
-Cite the dataset by its DOI, not by this URL — a repository link is not a persistent identifier.
-The DOI is minted on release through Zenodo and will appear here and in the accompanying
-article's data availability statement.
+Cite the DOI, not this URL — a repository link is not a persistent identifier.
+
+| | |
+|---|---|
+| **Concept DOI** — all versions, resolves to the latest | [10.5281/zenodo.22686363](https://doi.org/10.5281/zenodo.22686363) |
+| Version DOI — v1.0.0, the version the article reports | [10.5281/zenodo.22686364](https://doi.org/10.5281/zenodo.22686364) |
+
+The instrument that collected these judgements is archived separately at
+[10.5281/zenodo.22686359](https://doi.org/10.5281/zenodo.22686359).
 
 ## Licence
 
