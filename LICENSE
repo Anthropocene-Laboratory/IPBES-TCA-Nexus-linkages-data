@@ -15,3 +15,6 @@ options reproduced in `tca_actions.csv` and `nexus_response_options.csv` are
 taken from the IPBES Transformative Change Assessment and the IPBES Nexus
 Assessment. That material remains the property of IPBES and is included here
 with attribution; its reuse is governed by the terms set by IPBES.
+
+Scope: this CC BY 4.0 declaration applies to the data and documentation.
+Python code (verify.py, scripts/ and tests/) is licensed under MIT; see LICENSE-CODE.

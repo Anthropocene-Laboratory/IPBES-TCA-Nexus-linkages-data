@@ -1,14 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Recompute the numbers reported in the article from this dataset alone.
-
-A dataset is only the minimal dataset if the published figures come back out of
-it without anything else -- no database, no private files, no other repository.
-This script is that claim made testable: it recomputes every headline number the
-article states and fails if one of them does not match.
+# SPDX-License-Identifier: MIT
+"""Check 18 frozen numerical expectations from the public CSV files.
 
     python verify.py
 
-Reads only `linkages.csv` and `nexus_response_options.csv` from its own folder.
+Reads only linkages.csv and nexus_response_options.csv. Passing these checks
+validates the recorded expectations, not every claim in a manuscript revision.
 """
 from __future__ import annotations
 
@@ -101,7 +98,7 @@ def main() -> int:
     if failures:
         print("%d of the article's numbers do not come out of this dataset." % len(failures))
         return 1
-    print("Every number reported in the article is reproduced by this dataset alone.")
+    print("All 18 recorded numerical expectations are reproduced by this dataset.")
     return 0
 
 

@@ -8,15 +8,16 @@ actions** of the IPBES Transformative Change Assessment (chapter 5) to one of th
 options** of the IPBES Nexus Assessment (chapter 5), and qualifying the linkage as *primary* or
 *secondary*.
 
-This is the minimal dataset behind the accompanying article. Every number reported there is
-recomputed from these files and nothing else:
+This is the public judgement dataset behind the accompanying article. The following
+command checks 18 recorded numerical expectations from these files:
 
 ```bash
 python verify.py
 ```
 
 Eighteen checks, from the headline counts down to the concentration statistics of the results
-section. If one fails, the dataset and the article disagree and the article is the one to doubt.
+section. A failure indicates a mismatch against those recorded expectations; passing
+does not independently validate every claim in a later manuscript revision.
 
 ## Files
 
@@ -25,7 +26,8 @@ section. If one fails, the dataset and the article disagree and the article is t
 | `linkages.csv` | 1,692 | one row per expert judgement |
 | `tca_actions.csv` | 22 | the actions, with their strategy and published wording |
 | `nexus_response_options.csv` | 71 | the response options, with their category and title |
-| `verify.py` | — | recomputes the article's numbers from the three files above |
+| `verify.py` | — | checks 18 frozen numerical expectations |
+| `scripts/` | — | reproduces mapping patterns, reach/breadth and threshold comparisons |
 
 ### `linkages.csv`
 
@@ -67,22 +69,51 @@ either personal or an artefact of collection. The remarks are held back rather t
 they are unstructured, unprompted and unreviewed, and releasing them would mean reading all 66
 for identifying content first.
 
-Everything the article reports is nonetheless recomputable, including the per-coder analyses:
-agreement, leave-one-coder-out robustness and coder effort all work from the pseudonyms.
+Pseudonyms preserve the grouping needed for per-coder calculations. The commands
+below define the analyses implemented in this release; they do not assert that
+every analysis mentioned in a manuscript is covered by `verify.py`.
+
+## Reproduce the analyses
+
+Requires Python 3.10 or later; no third-party packages or database access:
+
+```bash
+python verify.py
+python scripts/11_figure_patterns.py
+python scripts/12_versatility.py
+python -m unittest discover -s tests
+```
+
+Reports and input/output SHA-256 manifests are written under `outputs/`.
+Both analysis commands accept `--data PATH` and `--out PATH`.
+See [scripts/README.md](scripts/README.md) for the preserved calculation rules.
+
+To reproduce the figures, use Linker v1.3.0 or later:
+
+```bash
+cd ../app
+npm ci
+node scripts/export-flow-figure.cjs --dataset ../dataset
+```
+
+Version 1.1.0 adds public analysis code and explicit code licensing. The three
+CSV files are byte-for-byte unchanged from v1.0.0 (DOI 10.5281/zenodo.22686364).
 
 ## Citing
 
-Cite the DOI, not this URL — a repository link is not a persistent identifier.
+Use CITATION.cff and cite the version DOI actually used. The concept DOI identifies
+all versions; the DOI for v1.1.0 is listed on Zenodo once the release is archived.
 
 | | |
 |---|---|
 | **Concept DOI** — all versions, resolves to the latest | [10.5281/zenodo.22686363](https://doi.org/10.5281/zenodo.22686363) |
-| Version DOI — v1.0.0, the version the article reports | [10.5281/zenodo.22686364](https://doi.org/10.5281/zenodo.22686364) |
+| Original CSV snapshot — v1.0.0 | [10.5281/zenodo.22686364](https://doi.org/10.5281/zenodo.22686364) |
 
 The instrument that collected these judgements is archived separately at
 [10.5281/zenodo.22686359](https://doi.org/10.5281/zenodo.22686359).
 
 ## Licence
 
-[CC BY 4.0](./LICENSE). The IPBES definitions reproduced in the two reference files remain the
+Data and documentation: [CC BY 4.0](./LICENSE). Python code (`verify.py`,
+`scripts/`, `tests/`): [MIT](./LICENSE-CODE). The IPBES definitions reproduced in the two reference files remain the
 property of IPBES and are included with attribution; their reuse is governed by IPBES's terms.
